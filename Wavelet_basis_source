@@ -205,7 +205,7 @@ class wavelet(Basis):
     # get the current file path
         root = os.getcwd()
     # path for the type of wavelet 
-        scale_type_path = root + '/fda/waveCommon' + '/' + wavelet + 'Tables.mat'
+        scale_type_path = root + '/' + wavelet + 'Tables.mat'
     # load the scaling function and wavelet
         scale_type = sio.loadmat(scale_type_path)
     # unpack values to get the scaling functions in separate lists
