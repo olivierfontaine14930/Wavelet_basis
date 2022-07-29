@@ -160,13 +160,6 @@ class wavelet(Basis):
         array : array of wavelet translates
         """
 
-
-    # get the current file path
-        root = os.getcwd()
-    # path for the type of wavelet 
-        wavelet_type_path = root + '/fda/waveCommon' + '/' + wavelet + 'Tables.mat'
-    # load the scaling function and wavelet
-        wavelet_type = sio.loadmat(wavelet_type_path)
     # get the translates
         trans_range = self.translation_range(density_domain, wavelet, start_level)
     # scal_translates
